@@ -1,2 +1,7 @@
 # Todo
-Todo-List
+Todo-List made using React & MDBootstrap
+
+[Live Preview] (https://csb-zqnns-b9462e61r.now.sh/)
+
+## How it works?
+Add a item that you want to complete to the list. Once you have compeleted the task you can remove the task from the list.
