@@ -58,15 +58,25 @@ class App extends React.Component {
                   value={this.state.currentItem}
                 />
                 {/* Add warning for when the user tries to append an empty item to the list */}
+                <div
+                  style={{ display: this.state.showError ? "block" : "none" }}
+                >
+                  <p>Please Enter a value</p>
+                </div>
 
                 <MDBBtn
                   color="indigo"
                   flat
                   onClick={() => {
-                    this.setState({
-                      items: [...this.state.items, this.state.currentItem],
-                      currentItem: ""
-                    });
+                    this.state.currentItem !== ""
+                      ? this.setState({
+                          items: [...this.state.items, this.state.currentItem],
+                          currentItem: "",
+                          showError: false
+                        })
+                      : this.setState({
+                          showError: true
+                        });
                   }}
                 >
                   Add Item
@@ -90,7 +100,7 @@ class App extends React.Component {
           <div className="footer-copyright text-center py-3">
             <MDBContainer fluid>
               Muhammad F. Khan{" "}
-              <a href="https://github.com/M-Faheem-Khan"> Github </a>
+              <a href="https://github.com/M-Faheem-Khan/Todo"> Github </a>
             </MDBContainer>
           </div>
         </div>
