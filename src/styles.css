@@ -4,6 +4,10 @@
   font-size: 18px;
 }
 
+.errorMsg {
+  color: #F34D4D
+}
+
 .body {
   text-align: center;
 }

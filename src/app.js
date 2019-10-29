@@ -55,7 +55,7 @@ class App extends React.Component {
 									}}
 								/>
 								{/* Add warning for when the user tries to append an empty item to the list */}
-								<div style={{ display: this.state.showError ? "block" : "none" }} >
+								<div className="errorMsg" style={{ display: this.state.showError ? "block" : "none" }} >
 									<p>Please Enter a value</p>
 								</div>
 
