@@ -1,6 +1,7 @@
 .App {
   font-family: sans-serif;
   padding: 4rem;
+  font-size: 18px;
 }
 
 .body {
@@ -14,4 +15,23 @@
   width: 100%;
   background-color: #eceff1;
   text-align: center;
+}
+
+.list_no_bullets {
+  list-style-type: none;
+}
+
+.removeButton {
+  color: #F36A4D;
+  padding: 5px;
+  background: transparent !important;
+  border: none;
+}
+
+.removeButton:hover {
+  color: #F34D4D;
+}
+
+button:focus {
+  outline: none;
 }
