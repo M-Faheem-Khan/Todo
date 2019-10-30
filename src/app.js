@@ -28,13 +28,6 @@ class App extends React.Component {
 			return (
 				<li key={index}>
 					<button className="removeButton" onClick={() => this.removeItem(index)}><i className="far fa-times-circle"></i></button>
-					{/* <MDBBtn floating
-						color="danger"
-						size={"lg"}
-						onClick={() => this.removeItem(index)}
-					>
-						<MDBIcon far icon="times-circle" />
-					</MDBBtn> */}
 					{listItem}
 				</li>
 			);
